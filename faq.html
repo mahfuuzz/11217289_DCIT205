@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Department</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+        <h1>Frequently Asked Questions</h1>
+</section>
+
+    <header>
+        <h1>Computer Science Department</h1>
+        <p>Frequently Asked Questions</p>
+    </header>
+
+    <section>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">What are the admission requirements?</div>
+            <div class="faq-answer">
+                <p>The admission requirements vary for different programs. Please check the specific program's admission page for detailed information.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">How can I apply for a scholarship?</div>
+            <div class="faq-answer">
+                <p>Information about scholarships, including application processes and eligibility criteria, can be found on the scholarship page.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">What programming languages are taught in the courses?</div>
+            <div class="faq-answer">
+                <p>We cover a range of programming languages, including but not limited to Java, Python, C++, and JavaScript.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">Are there opportunities for internships?</div>
+            <div class="faq-answer">
+                <p>Yes, we actively collaborate with industry partners to provide internship opportunities for our students.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">How can I contact the department?</div>
+            <div class="faq-answer">
+                <p>You can find our contact information on the "Contact Us" page of our website.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">Is there a computer lab for students?</div>
+            <div class="faq-answer">
+                <p>Yes, we have well-equipped computer labs accessible to students for academic and research purposes.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        function toggleAnswer(element) {
+            var answer = element.nextElementSibling;
+            answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+    <section class="footer">
+        <h4>Tap on questions for answers and redirections.</h4>
+     </section>
+
+</body>
+</html>
